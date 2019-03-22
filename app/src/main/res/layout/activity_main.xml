@@ -32,7 +32,8 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="130dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="20dp"
+            app:cardBackgroundColor="@android:color/transparent"
             app:cardCornerRadius="10dp"
             app:cardElevation="20dp">
 
@@ -90,7 +91,8 @@
             android:layout_weight="1"
             android:layout_height="130dp"
             android:layout_toRightOf="@id/cardview1"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
+            app:cardBackgroundColor="@android:color/transparent"
             app:cardCornerRadius="10dp"
             app:cardElevation="20dp">
 
@@ -103,9 +105,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="5dp"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/ic_directions_run_black_24dp" />
+                    android:src="@drawable/ic_phone_black_24dp" />
 
                 <TextView
                     android:id="@+id/text_emergency1"
@@ -131,8 +133,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/line_emergency1"
-                    android:gravity="center"
                     android:padding="5dp"
+                    android:layout_alignParentBottom="true"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:text="Make A Quick Call"
                     android:layout_centerHorizontal="true"/>
@@ -151,12 +153,72 @@
         android:layout_below="@id/ll1">
 
         <android.support.v7.widget.CardView
-            android:id="@+id/cardview4"
+            android:id="@+id/cardview3"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="130dp"
             android:layout_toRightOf="@id/cardview1"
             android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/emergency3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_security_black_24dp" />
+
+                <TextView
+                    android:id="@+id/text_emergency3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/emergency3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:text="Know Your Right"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:id="@+id/line_emergency3"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/text_emergency3"
+                    android:background="#999"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/inor_text_emergency3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_emergency3"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="See what the law says about you."
+                    android:layout_centerHorizontal="true"/>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="130dp"
+            android:layout_toRightOf="@id/cardview1"
+            android:layout_marginLeft="20dp"
+            app:cardBackgroundColor="@android:color/transparent"
             app:cardCornerRadius="10dp"
             app:cardElevation="20dp">
 
@@ -171,7 +233,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="15dp"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/ic_directions_run_black_24dp" />
+                    android:src="@drawable/ic_extension_black_24dp" />
 
                 <TextView
                     android:id="@+id/text_emergency4"
@@ -180,7 +242,7 @@
                     android:layout_below="@id/emergency4"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="5dp"
-                    android:text="Know Your Right"
+                    android:text="About"
                     android:textSize="18dp"
                     android:textStyle="bold"/>
 
@@ -199,7 +261,7 @@
                     android:layout_below="@id/line_emergency4"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="See what the law says about you."
+                    android:text="About the app"
                     android:layout_centerHorizontal="true"/>
 
 
